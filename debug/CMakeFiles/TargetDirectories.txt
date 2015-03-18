@@ -1,0 +1,3 @@
+/home/birkeland/paloskar/git/ex6/debug/CMakeFiles/common.dir
+/home/birkeland/paloskar/git/ex6/debug/CMakeFiles/poisson.dir
+/home/birkeland/paloskar/git/ex6/debug/CMakeFiles/poisson-f.dir
