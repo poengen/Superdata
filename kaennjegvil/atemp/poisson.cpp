@@ -18,6 +18,10 @@ extern "C"{
 void fst_(Real *v, int *n, Real *w, int *nn);
 void fstinv_(Real *v, int *n, Real *w, int *nn);
 }
+void printArray(Real **A, int n1, int n2);
+
+void reshape(Real **bt, Real **b, int m, div_t divresult );
+
 
 int main(int argc, char **argv )
 {
@@ -50,69 +54,54 @@ int main(int argc, char **argv )
   	m  = n-1;
   	nn = 4*n;
   	
-  	div_t divresult ; divresult = div(m,size); 
-  	//cout << divresult.quot <<" " <<divresult.rem <<endl;
+  	div_t divresult = div(m,size); 
+  	
   	
   	if (rank < divresult.rem){
 		divresult.quot++;
 	}
-	cout <<rank <<" " <<divresult.quot<<endl;
+	int local_m = divresult.quot;
+	cout <<rank <<" " <<local_m<<endl;
 
-//dont parallelize these
+
   	diag = createRealArray (m);
-  	b    = createReal2DArray (m,m);
+  	b    = createReal2DArray (local_m,m);
   	
-  	bt   = createReal2DArray (m,m);
+  	bt   = createReal2DArray (local_m,m);
   	z    = createRealArray (nn);
 
   	h    = 1./(Real)n;
   	pi   = 4.*atan(1.);
 
-//start parallelizing here
+
 
   	for (i=0; i < m; i++) {
     		diag[i] = 2.*(1.-cos((i+1)*pi/(Real)n));
   	}
-  	for (j=0; j < m; j++) {
+  	for (j=0; j < local_m; j++) {
     		for (i=0; i < m; i++) {
       			b[j][i] = h*h;
     		}
   	}
-  	for (j=0; j < m; j++) {
+  	
+  	
+  	
+  	for (j=0; j < local_m; j++) {
     		fst_(b[j], &n, z, &nn);
   	}
 
-  	transpose (bt,b,m);
+  	
 
-  	for (i=0; i < m; i++) {
-    		fstinv_(bt[i], &n, z, &nn);
-  	}
-  
-  	for (j=0; j < m; j++) {
-    		for (i=0; i < m; i++) {
-      			bt[j][i] = bt[j][i]/(diag[i]+diag[j]);
-    		}
-  	}
-  
-  	for (i=0; i < m; i++) {
-    		fst_(bt[i], &n, z, &nn);
-  	}
-
-  	transpose (b,bt,m);
-
-  	for (j=0; j < m; j++) {
-    		fstinv_(b[j], &n, z, &nn);
-  	}
 
   	umax = 0.0;
-  	for (j=0; j < m; j++) {
+  	for (j=0; j < local_m; j++) {
     		for (i=0; i < m; i++) {
       			if (b[j][i] > umax) umax = b[j][i];
     		}
   	}
   	printf (" umax = %e \n",umax);
 	
-	cout<<"My rank is " <<rank <<endl<<;
+	
   	
   	
   	MPI_Finalize();
@@ -159,3 +148,46 @@ Real **createReal2DArray (int n1, int n2)
   memset(a[0],0,n*sizeof(Real));
   return (a);
 }
+
+void printArray(Real **A, int n1, int n2){
+	cout<<endl;
+	for (int i = 0 ; i < n1; i++){
+		for (int j = 0; j < n2; j++){
+			cout << A[i][j]<<" ";
+		}
+		cout<<endl;
+	}
+	cout<<endl;
+}
+
+void reshape(Real **bt, Real **b, int m, div_t divresult ){
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
