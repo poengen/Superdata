@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/birkeland/paloskar/git/ex6
+CMAKE_SOURCE_DIR = /home/birkeland/fredjoha/Desktop/Superdata
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/birkeland/paloskar/git/ex6/debug
+CMAKE_BINARY_DIR = /home/birkeland/fredjoha/Desktop/Superdata/debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/common.dir
@@ -60,7 +60,7 @@ CMakeFiles/common.dir/all:
 	$(MAKE) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/depend
 	$(MAKE) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/requires
 	$(MAKE) -f CMakeFiles/common.dir/build.make CMakeFiles/common.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/paloskar/git/ex6/debug/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles  1
 	@echo "Built target common"
 .PHONY : CMakeFiles/common.dir/all
 
@@ -70,9 +70,9 @@ all: CMakeFiles/common.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/paloskar/git/ex6/debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/paloskar/git/ex6/debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles 0
 .PHONY : CMakeFiles/common.dir/rule
 
 # Convenience name for target.
@@ -95,7 +95,7 @@ clean: CMakeFiles/common.dir/clean
 CMakeFiles/poisson.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) -f CMakeFiles/poisson.dir/build.make CMakeFiles/poisson.dir/depend
 	$(MAKE) -f CMakeFiles/poisson.dir/build.make CMakeFiles/poisson.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/paloskar/git/ex6/debug/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles  2
 	@echo "Built target poisson"
 .PHONY : CMakeFiles/poisson.dir/all
 
@@ -105,9 +105,9 @@ all: CMakeFiles/poisson.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/poisson.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/paloskar/git/ex6/debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/poisson.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/paloskar/git/ex6/debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles 0
 .PHONY : CMakeFiles/poisson.dir/rule
 
 # Convenience name for target.
@@ -131,7 +131,7 @@ CMakeFiles/poisson-f.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) -f CMakeFiles/poisson-f.dir/build.make CMakeFiles/poisson-f.dir/depend
 	$(MAKE) -f CMakeFiles/poisson-f.dir/build.make CMakeFiles/poisson-f.dir/requires
 	$(MAKE) -f CMakeFiles/poisson-f.dir/build.make CMakeFiles/poisson-f.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/paloskar/git/ex6/debug/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles  3
 	@echo "Built target poisson-f"
 .PHONY : CMakeFiles/poisson-f.dir/all
 
@@ -141,9 +141,9 @@ all: CMakeFiles/poisson-f.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/poisson-f.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/paloskar/git/ex6/debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/poisson-f.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/paloskar/git/ex6/debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles 0
 .PHONY : CMakeFiles/poisson-f.dir/rule
 
 # Convenience name for target.

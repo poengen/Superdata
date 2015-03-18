@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/birkeland/paloskar/git/ex6
+CMAKE_SOURCE_DIR = /home/birkeland/fredjoha/Desktop/Superdata
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/birkeland/paloskar/git/ex6/debug
+CMAKE_BINARY_DIR = /home/birkeland/fredjoha/Desktop/Superdata/debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/poisson-f.dir/depend.make
@@ -51,9 +51,9 @@ include CMakeFiles/poisson-f.dir/flags.make
 
 CMakeFiles/poisson-f.dir/poisson.f.o: CMakeFiles/poisson-f.dir/flags.make
 CMakeFiles/poisson-f.dir/poisson.f.o: ../poisson.f
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/paloskar/git/ex6/debug/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building Fortran object CMakeFiles/poisson-f.dir/poisson.f.o"
-	/usr/bin/gfortran  $(Fortran_DEFINES) $(Fortran_FLAGS) -c /home/birkeland/paloskar/git/ex6/poisson.f -o CMakeFiles/poisson-f.dir/poisson.f.o
+	/usr/bin/gfortran  $(Fortran_DEFINES) $(Fortran_FLAGS) -c /home/birkeland/fredjoha/Desktop/Superdata/poisson.f -o CMakeFiles/poisson-f.dir/poisson.f.o
 
 CMakeFiles/poisson-f.dir/poisson.f.o.requires:
 .PHONY : CMakeFiles/poisson-f.dir/poisson.f.o.requires
@@ -95,6 +95,6 @@ CMakeFiles/poisson-f.dir/clean:
 .PHONY : CMakeFiles/poisson-f.dir/clean
 
 CMakeFiles/poisson-f.dir/depend:
-	cd /home/birkeland/paloskar/git/ex6/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/birkeland/paloskar/git/ex6 /home/birkeland/paloskar/git/ex6 /home/birkeland/paloskar/git/ex6/debug /home/birkeland/paloskar/git/ex6/debug /home/birkeland/paloskar/git/ex6/debug/CMakeFiles/poisson-f.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/birkeland/fredjoha/Desktop/Superdata/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/birkeland/fredjoha/Desktop/Superdata /home/birkeland/fredjoha/Desktop/Superdata /home/birkeland/fredjoha/Desktop/Superdata/debug /home/birkeland/fredjoha/Desktop/Superdata/debug /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles/poisson-f.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/poisson-f.dir/depend
 

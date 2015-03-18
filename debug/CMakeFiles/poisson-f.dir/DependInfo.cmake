@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_Fortran
-  "/home/birkeland/paloskar/git/ex6/poisson.f" "/home/birkeland/paloskar/git/ex6/debug/CMakeFiles/poisson-f.dir/poisson.f.o"
+  "/home/birkeland/fredjoha/Desktop/Superdata/poisson.f" "/home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles/poisson-f.dir/poisson.f.o"
   )
 SET(CMAKE_Fortran_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/birkeland/paloskar/git/ex6/debug/CMakeFiles/common.dir/DependInfo.cmake"
+  "/home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles/common.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

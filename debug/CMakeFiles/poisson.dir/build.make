@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/birkeland/paloskar/git/ex6
+CMAKE_SOURCE_DIR = /home/birkeland/fredjoha/Desktop/Superdata
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/birkeland/paloskar/git/ex6/debug
+CMAKE_BINARY_DIR = /home/birkeland/fredjoha/Desktop/Superdata/debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/poisson.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/poisson.dir/flags.make
 
 CMakeFiles/poisson.dir/poisson.cpp.o: CMakeFiles/poisson.dir/flags.make
 CMakeFiles/poisson.dir/poisson.cpp.o: ../poisson.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/paloskar/git/ex6/debug/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/poisson.dir/poisson.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/poisson.dir/poisson.cpp.o -c /home/birkeland/paloskar/git/ex6/poisson.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/poisson.dir/poisson.cpp.o -c /home/birkeland/fredjoha/Desktop/Superdata/poisson.cpp
 
 CMakeFiles/poisson.dir/poisson.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/poisson.dir/poisson.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/birkeland/paloskar/git/ex6/poisson.cpp > CMakeFiles/poisson.dir/poisson.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/birkeland/fredjoha/Desktop/Superdata/poisson.cpp > CMakeFiles/poisson.dir/poisson.cpp.i
 
 CMakeFiles/poisson.dir/poisson.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/poisson.dir/poisson.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/birkeland/paloskar/git/ex6/poisson.cpp -o CMakeFiles/poisson.dir/poisson.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/birkeland/fredjoha/Desktop/Superdata/poisson.cpp -o CMakeFiles/poisson.dir/poisson.cpp.s
 
 CMakeFiles/poisson.dir/poisson.cpp.o.requires:
 .PHONY : CMakeFiles/poisson.dir/poisson.cpp.o.requires
@@ -102,6 +102,6 @@ CMakeFiles/poisson.dir/clean:
 .PHONY : CMakeFiles/poisson.dir/clean
 
 CMakeFiles/poisson.dir/depend:
-	cd /home/birkeland/paloskar/git/ex6/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/birkeland/paloskar/git/ex6 /home/birkeland/paloskar/git/ex6 /home/birkeland/paloskar/git/ex6/debug /home/birkeland/paloskar/git/ex6/debug /home/birkeland/paloskar/git/ex6/debug/CMakeFiles/poisson.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/birkeland/fredjoha/Desktop/Superdata/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/birkeland/fredjoha/Desktop/Superdata /home/birkeland/fredjoha/Desktop/Superdata /home/birkeland/fredjoha/Desktop/Superdata/debug /home/birkeland/fredjoha/Desktop/Superdata/debug /home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles/poisson.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/poisson.dir/depend
 

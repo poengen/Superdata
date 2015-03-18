@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_Fortran
-  "/home/birkeland/paloskar/git/ex6/fst.f" "/home/birkeland/paloskar/git/ex6/debug/CMakeFiles/common.dir/fst.f.o"
+  "/home/birkeland/fredjoha/Desktop/Superdata/fst.f" "/home/birkeland/fredjoha/Desktop/Superdata/debug/CMakeFiles/common.dir/fst.f.o"
   )
 SET(CMAKE_Fortran_COMPILER_ID "GNU")
 

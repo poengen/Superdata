@@ -28,8 +28,7 @@ int main(int argc, char **argv )
   	Real *diag, **b, **bt, *z;
   	Real pi, h, umax;
   	int i, j, n, m, nn;
-	i = 2;
-	cout << i << endl;
+
 
 	//initializing MPI
 	int rank, size;
@@ -50,10 +49,19 @@ int main(int argc, char **argv )
   	n  = atoi(argv[1]);
   	m  = n-1;
   	nn = 4*n;
+  	
+  	div_t divresult ; divresult = div(m,size); 
+  	//cout << divresult.quot <<" " <<divresult.rem <<endl;
+  	
+  	if (rank < divresult.rem){
+		divresult.quot++;
+	}
+	cout <<rank <<" " <<divresult.quot<<endl;
 
 //dont parallelize these
   	diag = createRealArray (m);
   	b    = createReal2DArray (m,m);
+  	
   	bt   = createReal2DArray (m,m);
   	z    = createRealArray (nn);
 
@@ -103,10 +111,20 @@ int main(int argc, char **argv )
     		}
   	}
   	printf (" umax = %e \n",umax);
-
+	
+	cout<<"My rank is " <<rank <<endl;
+  	
+  	
+  	MPI_Finalize();
   	return 0;
 }
 
+
+
+
+
+
+////////////////////////////////////////////////////////////
 void transpose (Real **bt, Real **b, int m)
 {
   int i, j;
