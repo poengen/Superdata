@@ -109,7 +109,7 @@ int main(int argc, char **argv )
 
 
 	//print2DArray(m,local_quot,b,rank); //print b på prosess 0
-	//print1DArray(size, size_array, rank); //print size_array på prosess 0
+	print1DArray(size, size_array, rank); //print size_array på prosess 0
 
 
 
