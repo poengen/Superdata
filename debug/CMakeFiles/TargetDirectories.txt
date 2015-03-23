@@ -1,0 +1,3 @@
+/home/birkeland/paloskar/git/Superdata/debug/CMakeFiles/common.dir
+/home/birkeland/paloskar/git/Superdata/debug/CMakeFiles/poisson.dir
+/home/birkeland/paloskar/git/Superdata/debug/CMakeFiles/poisson-f.dir

@@ -11,26 +11,20 @@ using namespace std;
 
 /* function prototypes */
 Real *createRealArray (int n);
+int *createIntArray (int n);
 Real **createReal2DArray (int m, int n);
 void transpose (Real **bt, Real **b, int n, int m);
+void printArray(Real **A, int n1, int n2);
 extern "C"{
 void fst_(Real *v, int *n, Real *w, int *nn);
 void fstinv_(Real *v, int *n, Real *w, int *nn);
 }
 
-//print functions
-void print2DArray(int m, int local_quot, Real **b, int rank);
-void print1DArray(int size, int array[], int rank);
-void printArray(Real **A, int n1, int n2);
-
-// andre funksjoner
-int *createIntArray (int n);
 
 int main(int argc, char **argv )
 {
-	//declaring variables
-	//clock_t start, end; start = clock();
-  	Real *diag, **b, **bt, *z, **temp_b;
+
+  	Real *diag, **b, **bt, **temp_b, *z;
   	Real pi, h, umax;
   	int i, j, n, m, nn;
 
@@ -58,7 +52,7 @@ int main(int argc, char **argv )
   	h    = 1./(Real)n;
   	pi   = 4.*atan(1.);
   	
-  	div_t divresult = div(m,size);
+  	div_t divresult = div(m,size); 
   	int local_col = divresult.quot;
   	if (rank < divresult.rem){ local_col++;}
 	
@@ -72,12 +66,10 @@ int main(int argc, char **argv )
 	int *sendcounts =  createIntArray(size);
 	for (int i = 0; i < size; i++){
 		if (i < divresult.rem){ sendcounts[i] = local_col*(divresult.quot+1); }
-		else { sendcounts[i]=local_col*divresult.quot; }
+		else { sendcounts[i]=local_col*divresult.quot; }	
 	}
 	
-	
-
-	// lager en displacement vektor som
+	// lager en displacement vektor som 
 	int *displs = createIntArray(size);
 	displs[0]=0;
 	for (int i = 1 ; i<size ; i++){ displs[i]=displs[i-1]+sendcounts[i-1]; }
@@ -162,7 +154,7 @@ int main(int argc, char **argv )
       			if (new_b[j][i] > umax) umax = new_b[j][i];
     		}
   	}
-  	//cout<<rank<<" umax= "<<umax<<endl;
+  	cout<<rank<<" umax= "<<umax<<endl;
   	
   	
   	
@@ -228,27 +220,6 @@ void printArray(Real **A, int n1, int n2){
 		cout<<endl;
 	}
 	cout<<endl;
-}
-
-void print1DArray(int size, int array[], int rank){
-	if (rank == 0) {
-		for (int i = 0; i < size; i++){
-			cout << array[i] << "\t";
-		}
-		cout << endl;
-	}
-}
-
-void print2DArray(int m, int local_quot, Real **b, int rank){
-	if (rank == 0) {
-		cout << " Thread = " << rank << endl;
-		for (int i=0;i<m;i++){
-			for (int j=0; j < local_quot; j++) {
-				cout << b[j][i] << "\t";
-			}
-			cout << "\n";
-		}
-	}
 }
 
 
