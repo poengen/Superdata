@@ -5,6 +5,7 @@ ssh paloskar@banach13.math.ntnu.no
 vim Makefile
 :q
 
+rm -r debug
 mkdir debug
 cd debug
 cmake ..
@@ -12,5 +13,6 @@ cmake ..
 make help
 make
 
+mpirun -np 4 ./poisson 128
 ./poisson 128
 

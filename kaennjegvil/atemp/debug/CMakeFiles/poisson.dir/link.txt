@@ -1,1 +1,0 @@
-/usr/bin/c++    -fopenmp    CMakeFiles/poisson.dir/poisson.cpp.o  -o poisson -rdynamic libcommon.a -lmpi_cxx -lmpi -ldl -lhwloc -lgfortran -lquadmath 

@@ -1,3 +1,0 @@
-/home/birkeland/fredjoha/Desktop/atemp/debug/CMakeFiles/common.dir
-/home/birkeland/fredjoha/Desktop/atemp/debug/CMakeFiles/poisson.dir
-/home/birkeland/fredjoha/Desktop/atemp/debug/CMakeFiles/poisson-f.dir

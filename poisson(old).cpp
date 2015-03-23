@@ -61,7 +61,7 @@ int main(int argc, char **argv )
 		divresult.quot++;
 	}
 	int local_m = divresult.quot;
-	cout <<rank <<" " <<local_m<<endl;
+	cout << rank << " " << local_m << endl;
 
 
   	diag = createRealArray (m);
