@@ -1,1 +1,0 @@
-/usr/bin/gfortran      CMakeFiles/poisson-f.dir/poisson.f.o  -o poisson-f -rdynamic libcommon.a /usr/lib/libmpi_f90.so /usr/lib/libmpi_f77.so /usr/lib/libmpi.so /usr/lib/x86_64-linux-gnu/libdl.so /usr/lib/x86_64-linux-gnu/libhwloc.so 
