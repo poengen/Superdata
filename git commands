@@ -1,9 +1,0 @@
-git:
-
-$ git status		%sjekker status for ditt repository
-$ git clone https://github.com/poengen/Superdata.git %cloning repository
-$ git add <filename>	%legger til fil
-$ git add *		%legger til alle filene i repository
-$ git commit -m "message"	%commiter filer med en beskjed
-$ git push		%synkroniserer opp
-$ git pull		%synkroniserer ned
